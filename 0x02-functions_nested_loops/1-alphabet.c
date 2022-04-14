@@ -1,22 +1,17 @@
 #include "main.h"
-
 /**
- * main - print_alphabet
+ * print_alphabet - compares the variable value
  * Return:0
  */
-
 void print_alphabet(void)
-/**
- * Check variable against allthe letters of the 
- * and print the variable on anew line
- */
 {
-char c = 'a';
 
-while (c <= 'z')
-{
-_putchar(c);
-c++;
-}
-_putchar('\n');
+	char c = 'a';
+
+	while (c <= 'z')
+	{
+		_putchar(c);
+		c++;
+	}
+	_putchar('\n');
 }
