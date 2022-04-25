@@ -15,10 +15,6 @@ void print_rev(char *s)
 		c++;
 	}
 
-	for (i = c - 1; i >= 0; i--)
-	{
-		char temp[c];
-		temp[i] = *(s + i);
-	}
+	for (i = c - 1; i >= 0; i--);
 
 }
