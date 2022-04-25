@@ -18,7 +18,7 @@ void print_rev(char *s)
 
 	for (i = c - 1; i >= 0; i--)
 	{
-		temp = *(s + i));
+		temp = *(s + i);
 	}
 
 }
