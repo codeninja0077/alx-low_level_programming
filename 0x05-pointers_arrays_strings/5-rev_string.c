@@ -9,7 +9,6 @@
 void print_rev(char *s)
 {
 	int i, c = 0;
-	char temp;
 
 	for (i = 0; *(s + i) != '\0'; i++)
 	{
@@ -18,7 +17,8 @@ void print_rev(char *s)
 
 	for (i = c - 1; i >= 0; i--)
 	{
-		temp = *(s + i);
+		char temp[c];
+		temp[i] = *(s + i);
 	}
 
 }
