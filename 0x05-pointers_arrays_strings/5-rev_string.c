@@ -16,6 +16,7 @@ void print_rev(char *s)
 		c++;
 	}
 	c = c - 1;
+	c = c / 2;
 
 	while (i < c)
 	{
