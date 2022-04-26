@@ -9,12 +9,21 @@
 void print_rev(char *s)
 {
 	int i, c = 0;
+	char temp;
 
 	for (i = 0; *(s + i) != '\0'; i++)
 	{
 		c++;
 	}
+	c = c - 1;
 
-	for (i = c - 1; i >= 0; i--);
+	while (i < c)
+	{
+		temp = s[c];
+		s[c] = s[i];
+		s[i] = temp;
+		i++;
+		c--;
+	}
 
 }
